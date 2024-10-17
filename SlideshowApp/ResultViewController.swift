@@ -8,11 +8,16 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
+    @IBOutlet weak var imageView2: UIImageView!
+    
+    var image: UIImage?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+
+        imageView2.image = image
     }
     
 

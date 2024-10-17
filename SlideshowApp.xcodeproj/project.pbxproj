@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00186CFD2CC12F8400B065B2 /* 爆弾2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 00186CFA2CC12F8400B065B2 /* 爆弾2.jpeg */; };
+		00186CFE2CC12F8400B065B2 /* 爆弾3.png in Resources */ = {isa = PBXBuildFile; fileRef = 00186CFB2CC12F8400B065B2 /* 爆弾3.png */; };
+		00186CFF2CC12F8400B065B2 /* 爆弾1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 00186CFC2CC12F8400B065B2 /* 爆弾1.jpeg */; };
 		00A1E2812CC08E3600C58BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1E2802CC08E3600C58BEB /* AppDelegate.swift */; };
 		00A1E2832CC08E3600C58BEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1E2822CC08E3600C58BEB /* SceneDelegate.swift */; };
 		00A1E2852CC08E3600C58BEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1E2842CC08E3600C58BEB /* ViewController.swift */; };
 		00A1E2882CC08E3600C58BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A1E2862CC08E3600C58BEB /* Main.storyboard */; };
 		00A1E28A2CC08E3700C58BEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A1E2892CC08E3700C58BEB /* Assets.xcassets */; };
 		00A1E28D2CC08E3700C58BEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A1E28B2CC08E3700C58BEB /* LaunchScreen.storyboard */; };
+		00A1E2992CC0D09800C58BEB /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1E2982CC0D09700C58BEB /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00186CFA2CC12F8400B065B2 /* 爆弾2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "爆弾2.jpeg"; sourceTree = "<group>"; };
+		00186CFB2CC12F8400B065B2 /* 爆弾3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "爆弾3.png"; sourceTree = "<group>"; };
+		00186CFC2CC12F8400B065B2 /* 爆弾1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "爆弾1.jpeg"; sourceTree = "<group>"; };
 		00A1E27D2CC08E3600C58BEB /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A1E2802CC08E3600C58BEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00A1E2822CC08E3600C58BEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,7 @@
 		00A1E2892CC08E3700C58BEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00A1E28C2CC08E3700C58BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00A1E28E2CC08E3700C58BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00A1E2982CC0D09700C58BEB /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +67,14 @@
 				00A1E2802CC08E3600C58BEB /* AppDelegate.swift */,
 				00A1E2822CC08E3600C58BEB /* SceneDelegate.swift */,
 				00A1E2842CC08E3600C58BEB /* ViewController.swift */,
+				00A1E2982CC0D09700C58BEB /* ResultViewController.swift */,
 				00A1E2862CC08E3600C58BEB /* Main.storyboard */,
 				00A1E2892CC08E3700C58BEB /* Assets.xcassets */,
 				00A1E28B2CC08E3700C58BEB /* LaunchScreen.storyboard */,
 				00A1E28E2CC08E3700C58BEB /* Info.plist */,
+				00186CFC2CC12F8400B065B2 /* 爆弾1.jpeg */,
+				00186CFA2CC12F8400B065B2 /* 爆弾2.jpeg */,
+				00186CFB2CC12F8400B065B2 /* 爆弾3.png */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -126,7 +138,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A1E28D2CC08E3700C58BEB /* LaunchScreen.storyboard in Resources */,
+				00186CFF2CC12F8400B065B2 /* 爆弾1.jpeg in Resources */,
+				00186CFE2CC12F8400B065B2 /* 爆弾3.png in Resources */,
 				00A1E28A2CC08E3700C58BEB /* Assets.xcassets in Resources */,
+				00186CFD2CC12F8400B065B2 /* 爆弾2.jpeg in Resources */,
 				00A1E2882CC08E3600C58BEB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +156,7 @@
 				00A1E2852CC08E3600C58BEB /* ViewController.swift in Sources */,
 				00A1E2812CC08E3600C58BEB /* AppDelegate.swift in Sources */,
 				00A1E2832CC08E3600C58BEB /* SceneDelegate.swift in Sources */,
+				00A1E2992CC0D09800C58BEB /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,4 +9,11 @@ import UIKit
 
 class SliderCellCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var imgView: UIImageView!
+    
+    var image: UIImage! {
+      didSet {
+        imgView.image = image
+      }
+    }
 }
