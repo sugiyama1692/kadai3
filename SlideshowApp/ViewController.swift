@@ -18,23 +18,27 @@ class ViewController: UIViewController {
     
     // 配列に指定するindex番号を宣言
     var nowIndex:Int = 0
+    
+    var selectedIndex:Int = 0
 
     // スライドショーに使用するタイマーを宣言
     var timer: Timer!
 
     // スライドショーさせる画像の配列を宣言
     var imageArray:[UIImage] = [
-        UIImage(named: "爆弾1")!,
-        UIImage(named: "爆弾2")!,
-        UIImage(named: "爆弾3")!,
+        UIImage(named: "爆弾1.jpeg")!,
+        UIImage(named: "爆弾2.jpeg")!,
+        UIImage(named: "爆弾3.png")!,
     ]
+    
+//    var selectedImage:UIImage!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         // 画像を設定
-        let sampleImage = UIImage(named: "爆弾1")!
+        let sampleImage = UIImage(named: "爆弾1.jpeg")!
         imageView.image = sampleImage
     }
     
@@ -91,16 +95,16 @@ class ViewController: UIViewController {
     }
 
     @objc func changeImage() {
-        // indexを増やして表示する画像を切り替える
-        nowIndex += 1
+            // indexを増やして表示する画像を切り替える
+           nowIndex += 1
 
-        // indexが表示予定の画像の数と同じ場合
-        if (nowIndex == imageArray.count) {
-            // indexを一番最初の数字に戻す
-            nowIndex = 0
-        }
-        // indexの画像をstoryboardの画像にセットする
-        imageView.image = imageArray[nowIndex]
+           // indexが表示予定の画像の数と同じ場合
+           if (nowIndex == imageArray.count) {
+               // indexを一番最初の数字に戻す
+               nowIndex = 0
+           }
+           // indexの画像をstoryboardの画像にセットする
+           imageView.image = imageArray[nowIndex]
     }
     @IBAction func onTapImg(_ sender: Any) {
         performSegue(withIdentifier: "extededImage", sender: nil)
@@ -110,11 +114,16 @@ class ViewController: UIViewController {
         // segueから遷移先のResultViewControllerを取得する
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
         // 遷移先のResultViewControllerで宣言しているx, yに値を代入して渡す
-        let selectedImg = imageArray[nowIndex]
-        resultViewController.image = selectedImg
+        selectedIndex = nowIndex
+        var selectedImage = imageArray[nowIndex]
+        resultViewController.image = selectedImage
+        
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
+        self.slideShowButton(startButton!)
+        nowIndex = selectedIndex
+        imageView.image = imageArray[nowIndex]
     }
 
 }
